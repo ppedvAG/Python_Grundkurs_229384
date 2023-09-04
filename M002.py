@@ -111,7 +111,7 @@ meinCar["KM"] = 10000
 print(meinCar)
 
 # dict.keys(), dict.values(), dict.items()
-# Keys, Values oder beiden in Kombination holen
+# Keys, Values oder beide in Kombination holen
 print(meinCar.keys())
 print(meinCar.values())
 print(meinCar.items())
@@ -122,10 +122,17 @@ list1 = [1, 2, 3, 4]
 list2 = [2, 3, 4, 5, 6]
 list3 = [5, 6, 7, 8]
 # Kombiniere die drei Listen in eine ganze Liste und schließe Duplikate aus
+list4 = list1 + list2 + list3
+list4 = set(list4)
+print(list(list4))
 
 # Übung 2
 # Erstelle einen String und wandele ihn in eine Liste um, dabei soll jedes einzelne Zeichen ein Element der Liste werden
+text = "Ein Text"
+print(list(text))
 
 # Übung 3
-# Lasse eine Liste erstellen die bei 0 beginnt und alle geraden Zahlen bis 20 enthält
+# Lasse eine Liste erstellen die bei 0 beginnt und alle geraden Zahlen bis inkl. 20 enthält
 # Nicht selbst schreiben, sondern Python machen lassen
+r21 = range(0, 21, 2)
+print(list(r21))
